@@ -1,3 +1,6 @@
+// Make Promise available globally for all tool code.
+Promise = require("meteor-promise");
+
 var showRequireProfile = ('METEOR_PROFILE_REQUIRE' in process.env);
 if (showRequireProfile)
   require('./profile-require.js').start();
